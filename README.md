@@ -21,4 +21,3 @@ Die Code Dokumentation befindet sich im Reiter "Wiki".
 - **Min SDK:** 24
 - **Target SDK:** 35
 - **Compile SDK:** 35
----
