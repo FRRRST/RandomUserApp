@@ -4,7 +4,7 @@
 > https://github.com/FRRRST/RandomUserApp/
 ---
 ## Dokumentation
-Die Code Dokumentation befindet sich im Reiter "Wiki".
+> Die Code Dokumentation befindet sich im Reiter "Wiki".
 ---
 ## Erstellung des Projektes
 1. Repository clonen
