@@ -1,5 +1,5 @@
 # RandomUserApp
----
+
 ## GitHub-Repository
 
 > https://github.com/FRRRST/RandomUserApp/
