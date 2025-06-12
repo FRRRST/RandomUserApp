@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
                     var user by remember { mutableStateOf<User?>(null)}
 
                     LaunchedEffect(userId) {
-                        user = dao.getUSerById(userId)
+                        user = dao.getUserById(userId)
                     }
 
                     user?.let {

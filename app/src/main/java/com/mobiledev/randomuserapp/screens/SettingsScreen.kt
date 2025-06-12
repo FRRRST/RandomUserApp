@@ -219,7 +219,7 @@ fun ClearDatabasePopup(
                 Text("Abbrechen")
             }
         },
-        title = {Text("Möchten Sie wirklich die Datenbank leeren?")},
+        title = {Text("Möchtest du wirklich die Datenbank leeren?")},
     )
 }
 

@@ -89,7 +89,7 @@ fun UserDetailsScreen(navController: NavController, userId: Int) {
     val context = LocalContext.current
 
     LaunchedEffect(userId) {
-        user = AppDatabase.getInstance(context).userDao().getUSerById(userId)
+        user = AppDatabase.getInstance(context).userDao().getUserById(userId)
     }
 
     if(showImageDialog) {
@@ -156,7 +156,7 @@ fun UserDetailsScreen(navController: NavController, userId: Int) {
                 onSave = {updatedUser ->
                     CoroutineScope(Dispatchers.IO).launch {
                         AppDatabase.getInstance(context).userDao().update(updatedUser)
-                        val refreshedUser = AppDatabase.getInstance(context).userDao().getUSerById(userId)
+                        val refreshedUser = AppDatabase.getInstance(context).userDao().getUserById(userId)
                         withContext(Dispatchers.Main) {
                             showEditDialog = false
                             user = refreshedUser

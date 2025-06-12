@@ -33,7 +33,7 @@ class BarcodeAnalyzer(
                         val userId = barcode.rawValue?.toIntOrNull()
                         if(userId != null) {
                             CoroutineScope(Dispatchers.IO).launch {
-                                val user = AppDatabase.getInstance(context).userDao().getUSerById(userId)
+                                val user = AppDatabase.getInstance(context).userDao().getUserById(userId)
                                 if(user != null) {
                                     val box = barcode.boundingBox
                                     if(box != null) {

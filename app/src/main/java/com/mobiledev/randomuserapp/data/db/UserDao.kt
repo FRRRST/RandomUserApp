@@ -16,7 +16,7 @@ interface UserDao {
     suspend fun clearAll()
 
     @androidx.room.Query("SELECT * FROM users WHERE id = :id")
-    suspend fun getUSerById(id: Int): User?
+    suspend fun getUserById(id: Int): User?
 
     @Update
     suspend fun update(user: User)
